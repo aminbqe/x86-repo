@@ -1,0 +1,9 @@
+; 24 = 16 + 8 -> 4 SHL + 3 SHL 
+MOV AX , 50
+MOV CL , 3
+SHL AX , CL
+XOR BX , BX
+ADD BX, AX
+SHL AX , 1
+ADD BX , AX
+; RESULT IS IN BX
