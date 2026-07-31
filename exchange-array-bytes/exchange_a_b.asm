@@ -1,0 +1,13 @@
+;WE HAVE 8BIT DATA SO THEN :
+; MOV SI , [ADD1.]
+; MOV DI , [ADD.2]
+MOV CX  , 100
+AGAIN :
+    MOV AL , SI
+    MOV AH , DI
+    XCHG AH , AL
+    MOV [SI] , AL
+    MOV [DI] , AH
+    INC SI
+    INC DI
+    LOOP AGAIN
